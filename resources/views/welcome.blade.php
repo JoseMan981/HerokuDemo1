@@ -4,11 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>Contact - Brand</title>
-        <link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}" />
+        <title>New Account</title>
+        <link rel="icon" type="image/x-icon" href="https://www.salesforce.com/etc/designs/sfdc-www/es_mx/favicon.ico">        <link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}" />
         <!--<link rel="stylesheet" href="{{ secure_asset('bootstrap.min.css') }}" />-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-        <link rel="stylesheet" href="{{ asset('ionicons.min.css') }}" />
+        <link rel="stylesheet" href="{{ secure_asset('ionicons.min.css') }}" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
         <style> 
             #map {
@@ -19,6 +19,7 @@
     </head>
     
     <body>
+        
         <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
             <div class="container"><a class="navbar-brand logo" href="#">Salesforce</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -30,7 +31,9 @@
             <section class="portfolio-block contact">
                 <div class="container">
                     <div class="heading">
-                        <h2>New Account</h2>
+                        <h2>New Account </h2>
+                        echo "<categoriesAllowed> " .$categoriesAllowed . "<br />";
+                            print_r($salesforce);
                     </div>
                     <form>
                         
@@ -48,9 +51,9 @@
                 
             </div>
         </footer>
-        <script src="{{ asset('jquery.min.js') }}"/>
-        <script src="{{ asset('bootstrap.min.js') }}"/>
+        <script src="{{ secure_asset('jquery.min.js') }}"/>
+        <script src="{{ secure_asset('bootstrap.min.js') }}"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-        <script src="{{ asset('theme.js') }}"/>
+        <script src="{{ secure_asset('theme.js') }}"/>
     </body>
 </html>
