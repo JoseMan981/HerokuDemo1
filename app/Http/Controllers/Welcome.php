@@ -49,8 +49,8 @@ class Welcome extends Controller
 
 
 
-        // echo "<pre> " .$lastTwoWeek . "<br />";
-        //     print_r($securityPolicies);
+        echo "<categoriesAllowed> " .$categoriesAllowed . "<br />";
+        print_r($salesforce);
         //     print_r($sPLast2Weeks);
 
         
