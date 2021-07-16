@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>New Account</title>
         <link rel="icon" type="image/x-icon" href="https://www.salesforce.com/etc/designs/sfdc-www/es_mx/favicon.ico">        <link rel="stylesheet" href="{{ asset('bootstrap.min.css') }}" />
-        <!--<link rel="stylesheet" href="{{ secure_asset('bootstrap.min.css') }}" />-->
+        <link rel="stylesheet" href="{{ secure_asset('bootstrap.min.css') }}" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
         <link rel="stylesheet" href="{{ secure_asset('ionicons.min.css') }}" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
@@ -34,6 +34,7 @@
                         <h2>New Account </h2>
                         echo "<categoriesAllowed> " .$categoriesAllowed . "<br />";
                             print_r($salesforce);
+                            {{$policy->fields->Name}}
                     </div>
                     <form>
                         
