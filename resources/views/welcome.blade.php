@@ -31,11 +31,6 @@
             <section class="portfolio-block contact">
                 <div class="container">
                     <div class="heading">
-                        <h2>New Account </h2>
-                        echo "<categoriesAllowed> " .$categoriesAllowed . "<br />";
-                            print_r($salesforce);
-                            {{$policy->fields->Name}}
-                    </div>
                     <form>
                         
                         <div class="form-group"><label for="name">Name</label><input class="form-control item" type="text" id="name"></div>
