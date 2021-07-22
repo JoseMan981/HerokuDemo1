@@ -35,7 +35,7 @@ class Welcome extends Controller
     public function index($locale = null)
     {
 
-
+        $nombre = "Gabriel";
 
         $salesforce = new Salesforce();
 
