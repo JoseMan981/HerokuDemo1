@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', 'Welcome@index');
+Route::controller('Welcome');
 
 //Route::get('/{locale}/article/{urlName}', 	[ Articles::class, 		 'index' ] );
 
