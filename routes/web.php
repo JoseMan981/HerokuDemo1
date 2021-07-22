@@ -17,5 +17,8 @@ use App\Http\Controllers\Welcome;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', 'Welcome@index');
+
 //Route::get('/{locale}/article/{urlName}', 	[ Articles::class, 		 'index' ] );
 
