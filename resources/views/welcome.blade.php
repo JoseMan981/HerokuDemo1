@@ -32,7 +32,6 @@
                 <div class="container">
                     <div class="heading">
                     <form>
-                        
                         <div class="form-group"><label for="name">Name</label><input class="form-control item" type="text" id="name"></div>
                         <div class="form-group"><label for="lastname">LastName</label><input class="form-control item" type="text" id="lastname" required></div>
                         <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div>

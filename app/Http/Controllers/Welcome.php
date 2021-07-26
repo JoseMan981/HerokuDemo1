@@ -51,19 +51,7 @@ class Welcome extends Controller
 
         echo "<categoriesAllowed> " .$categoriesAllowed . "<br />";
         print_r($salesforce);
-        //     print_r($sPLast2Weeks);
 
-        
-// (Knowledge Article: Status EQUALS Draft) AND (Knowledge Article: Record Type EQUALS Draft) AND (
-//     (Knowledge Article: Approval Status EQUALS New) OR (Knowledge Article: Approval StatusEQUALSRejected) OR (Knowledge Article: Approval StatusEQUALSnull)) AND (Knowledge Article: Total CategoriesGREATER THAN0) AND (Knowledge Article: Short contentNOT EQUAL TOnull) AND (Knowledge Article: Url Public ImageNOT EQUAL TOnull) AND (Knowledge Article: SubcategoryNOT EQUAL TOnull) AND (Knowledge Article: ApproverNOT EQUAL TOnull)
-
-
-        // echo "</pre>";
-
-
-        // echo "<pre>";
-        //     print_r($securityPolicies);
-        // echo "</pre>";
 
         return view('welcome', [
 
