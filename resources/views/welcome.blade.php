@@ -31,12 +31,16 @@
             <section class="portfolio-block contact">
                 <div class="container">
                     <div class="heading">
-                    <form>
-                        <div class="form-group"><label for="name">Name</label><input class="form-control item" type="text" id="name"></div>
-                        <div class="form-group"><label for="lastname">LastName</label><input class="form-control item" type="text" id="lastname" required></div>
-                        <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Save Account</button></div>
-                    </form>
+                        <form>
+                            <div class="form-group"><label for="search">Search Account</label><input class="form-control item" type="text" id="search" placeholder="Ingrese nombre"></div>
+                            <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Search</button></div>
+                        </form>
+                        <form>
+                            <div class="form-group"><label for="name">Name</label><input class="form-control item" type="text" id="name"></div>
+                            <div class="form-group"><label for="lastname">LastName</label><input class="form-control item" type="text" id="lastname" required></div>
+                            <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div>
+                            <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Save Account</button></div>
+                        </form>
                 </div>
             </section>
         </main>
