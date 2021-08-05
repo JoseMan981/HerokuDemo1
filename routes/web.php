@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Welcome;
+use App\Http\Controllers\GamExperiences;
+use App\Http\Controllers\News;
+use App\Http\Controllers\PoliticsLibrary;
+use App\Http\Controllers\Articles;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +18,16 @@ use App\Http\Controllers\Welcome;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-//Route::get('/{locale}/article/{urlName}', 	[ Articles::class, 		 'index' ] );
+Route::get('/', function () { return redirect('/es'); });
+Route::get('/{locale}', 					[ Welcome::class, 		 'index' ] );
+Route::get('/IATA/{IATA}', 					[ Welcome::class, 		 'qIATA' ] );
+
+
+Route::get('/{locale}/gam', 				[ GamExperiences::class, 'index' ] );
+Route::get('/{locale}/noticias', 			[ News::class, 			 'index' ] );
+Route::get('/{locale}/biblioteca', 			[ PoliticsLibrary::class,'index' ] );
+Route::get('/{locale}/article/{urlName}', 	[ Articles::class, 		 'index' ] );
+
+Route::post('/{locale}/article/{urlName}/{id}', 	[ Articles::class, 		 'update' ] );
+
 

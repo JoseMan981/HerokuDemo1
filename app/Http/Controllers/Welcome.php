@@ -14,14 +14,6 @@ class Welcome extends Controller
 
     public $languageSF;
 
-
-
-    public $gamArticles;
-    public $categoriesAllowed;
-    public $discoverMore;
-    public $lastArticlesByGam;
-    public $iataRecord;
-
     function __construct()
     {
 
@@ -32,14 +24,14 @@ class Welcome extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($locale = null)
+    public function index($locale)
     {
 
 
-
+        
         $salesforce = new Salesforce();
-
-        $this->categoriesAllowed = $salesforce->query('SELECT Id, Name FROM Account ');
+        echo $salesforce;
+        $articleSelected = $salesforce->query('SELECT Id, Name FROM Account Limit 1');
 
 
 
@@ -49,13 +41,14 @@ class Welcome extends Controller
 
 
 
-        echo "<categoriesAllowed> " .$categoriesAllowed . "<br />";
+        echo "<articleSelected> " .$articleSelected . "<br />";
         print_r($salesforce);
 
 
         return view('welcome', [
 
-                'categoriesAllowed'  => $this->categoriesAllowed,
+            'article'           => $articleSelected['manageable'][0],
+            'articleId'         => $articleSelected['manageable'][0]->id
             ] 
         );
     }

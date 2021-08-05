@@ -32,6 +32,8 @@
                 <div class="container">
                     <div class="heading">
                         <form>
+                            {{$article->Id}}
+                            {{$article->fields->Name}}
                             <div class="form-group"><label for="search">Search Account</label><input class="form-control item" type="text" id="search" placeholder="Ingrese nombre"></div>
                             <div class="form-group"><button class="btn btn-primary btn-block btn-lg" type="submit">Search</button></div>
                         </form>

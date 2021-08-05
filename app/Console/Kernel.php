@@ -16,6 +16,11 @@ class Kernel extends ConsoleKernel
         //
     ];
 
+
+    protected $middleware = [
+        \App\Http\Middleware\XFrameHeadersMiddleware::class,
+    ];
+
     /**
      * Define the application's command schedule.
      *
